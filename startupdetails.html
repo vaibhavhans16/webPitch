@@ -1,0 +1,83 @@
+<html>
+<head>
+
+  <style>
+  input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+  }
+  </style>
+</head>
+<body bgcolor="green">
+
+<form action="startup_details_upload.php" method="post"><center>
+    <br>
+        <font size="5" face="sans-serif" color="white"><legend>STARTUP INFORMATION:</legend></font><br>
+    Enter Company Name:<br>
+        <input type="text" name="cname" placeholder="Name"><br>
+    <!--Enter User ID:<br>
+          <input type="text" name="id" placeholder="ID"><br>-->
+
+    Enter CXO Details:<br>
+        <input type="text" name="cxo" placeholder="CXO NAME (separted by ,)"><br>
+        <input type="text" name="equity" placeholder="CXO EQUITY"><br>
+        <input type="text" name="position" placeholder="CXO position"><br>
+
+    Free Equity available for investment :</br> <input type="text" name="aequ" placeholder="equity willing to give up"></br>
+    Enter Annual Operational Cost:<br>
+        <!--<input type="text" name="flight_id" placeholder="Flight Number" onfocus="flightName();"><br>-->
+        <input type="text" name="oc"   placeholder="OPERATIONAL COST"><br>
+    Enter Debt on Company:<br>
+        <input type="text" name="debt" placeholder="DEBT"><br>
+
+    Enter total Sales:<br>
+        <input type="text" name="sales" placeholder="Sales "><br>
+    Enter Past Investment:<br>
+    <input type="text" name="pastmoney" placeholder="Pre Money Valuation"><br><br>
+    Enter Date of Establishment :<br>
+    <input type="date" name="dateofest" placeholder="PNR"><br><br>
+
+    Brief Introduction :</br></br>
+        <textarea rows="5" cols="90" name="textintro">Introduction</textarea><br><br>
+
+        <input type="submit" name="submit" value="SUBMIT">
+    </fieldset>
+</form>
+</body>
+</html>
